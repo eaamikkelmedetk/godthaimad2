@@ -1,0 +1,37 @@
+
+/*small*/
+
+@include breakpoint(600px,950px) {
+  @include menukortLayoutBig();
+}
+
+/*medium*/
+@include breakpoint(480px, 959px) {
+  @include mainContentSmallFont();
+  @include menukortSmallFont();
+
+}
+
+/*mediumlg*/
+@include breakpoint(960px, 1300px) {
+  @include hideMenuIcon();
+  @include showSidebarMedium();
+  @include mainContentMediumLargeFonts();
+  @include sidebarNavigationMedium();
+  @include bleedArticlePicture();
+  @include hrBleed();
+  @include menukortLayoutBig();
+  @include menukortLargeFont();
+}
+
+/*large*/
+@include breakpoint(1301px) {
+  @include hideMenuIcon();
+  @include showSidebarLarge();
+  @include mainContentLargeFonts();
+  @include sidebarNavigationLarge();
+  @include bleedArticlePicture();
+  @include hrBleed();
+  @include menukortLayoutBig();
+  @include menukortLargeFont();
+}

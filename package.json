@@ -1,0 +1,29 @@
+{
+  "name": "godthaimadwebpack",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^4.4.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "uglify-loader": "^1.4.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --inline",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.5.0",
+    "susy": "^2.2.12",
+    "typesettings": "^3.0.1",
+    "typi": "^3.0.0-alpha.1"
+  }
+}

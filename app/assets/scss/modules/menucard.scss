@@ -1,0 +1,70 @@
+.menukort__ItemLeft {
+  @include span(nested 12 last);
+  margin-bottom: 20px;
+}
+.menukort__ItemRight {
+  @include span(nested 12 last);
+  margin-bottom: 20px;
+}
+
+.menukort__ItemImage {
+  width: 100%;
+  img {
+    border-bottom: 2px solid $redkeycolor;
+  }
+}
+
+.menukort__ItemText {
+  margin: 10px;
+}
+
+.menukort__header {
+  padding: 0;
+  margin: 0;
+  font-size: map-deep-get($fontSettings, menucardHeader, font-size, small);
+  line-height: map-deep-get($fontSettings, menucardHeader, line-height, small);
+}
+
+.menukort__paragraph {
+  margin: 5px 0 0 0;
+  font-size: map-deep-get($fontSettings, menucardParagraph, font-size, small);
+  line-height: map-deep-get($fontSettings, menucardParagraph, line-height, small);
+}
+
+@mixin menukortSmallFont {
+  .menukort__header {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-size: map-deep-get($fontSettings, menucardHeader, font-size, small);
+    line-height: map-deep-get($fontSettings, menucardHeader, line-height, small);
+  }
+
+  .menukort__paragraph {
+    font-size: map-deep-get($fontSettings, menucardParagraph, font-size, small);
+    line-height: map-deep-get($fontSettings, menucardParagraph, line-height, small);
+  }
+}
+
+@mixin menukortLargeFont {
+  .menukort__header {
+    padding: 0;
+    margin: 0;
+    font-size: map-deep-get($fontSettings, menucardHeader, font-size, large);
+    line-height: map-deep-get($fontSettings, menucardHeader, line-height, large);
+  }
+
+  .menukort__paragraph {
+    font-size: map-deep-get($fontSettings, menucardParagraph, font-size, large);
+    line-height: map-deep-get($fontSettings, menucardParagraph, line-height, large);
+  }
+}
+
+@mixin menukortLayoutBig() {
+  .menukort__ItemLeft {
+    @include span(nested 6);
+  }
+  .menukort__ItemRight {
+    @include span(nested 6 last);
+  }
+}

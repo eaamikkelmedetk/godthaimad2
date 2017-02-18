@@ -1,0 +1,53 @@
+@import '~susy/sass/susy';
+@import '~breakpoint-sass/stylesheets/breakpoint';
+
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Roboto');
+
+$susy: (
+        flow: ltr,
+        math: fluid,
+        output: float,
+        gutter-position: after,
+        container: 95%,
+        container-position: center,
+        columns: 12,
+        gutters: .25,
+        column-width: false,
+        global-box-sizing: border-box,
+        last-flow: to,
+        debug: (
+                image: hide,
+                color: rgba(#66f, .25),
+                output: background,
+                toggle: top right,
+        ),
+        use-custom: (
+                background-image: true,
+                background-options: false,
+                box-sizing: true,
+                clearfix: false,
+                rem: true,
+        )
+);
+
+
+
+$shorthand: 12 1/4 fluid float inside;
+
+/*Variables*/
+@import 'other/variables';
+
+/*Functions*/
+@import 'other/functions';
+
+/*layout*/
+@import "layout/layout";
+
+/*modules*/
+@import "modules//header";
+@import "modules/navigation";
+@import "modules/maincontent";
+@import 'modules/menucard';
+
+/*Breakpoints*/
+@import "other/breakpoints";

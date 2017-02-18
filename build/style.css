@@ -1,0 +1,290 @@
+@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Roboto);/*Variables*/
+/*Functions*/
+/*layout*/
+body {
+  background-color: #EBEBE8;
+  font-family: Raleway, sans-serif; }
+
+.container {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.header {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+
+.mainContent {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+
+.sidebar__navigation {
+  display: none; }
+
+/*modules*/
+/*Columns*/
+.header__logo {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%; }
+
+.header__menuicon {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0; }
+
+/*Typography and more*/
+.logo__img {
+  width: 283px; }
+
+.menu {
+  font-size: 1.25em;
+  text-align: right; }
+
+.menu__menuicon {
+  margin: 1.2rem 0rem 0 0;
+  padding: .4rem;
+  color: #fafafa;
+  border-radius: 20%;
+  background-color: #616161; }
+
+.article__bleedPicture {
+  display: block;
+  background-image: url("/assets/images/smagpaathailand.jpg");
+  background-size: 100% auto;
+  background-position: top left; }
+
+.menukort__ItemLeft {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%; }
+
+.menukort__ItemRight {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0; }
+
+.menukort__ItemImage {
+  width: 100%; }
+  .menukort__ItemImage img {
+    border-bottom: 2px solid #d8131a; }
+
+.menukort__ItemText {
+  margin: 10px; }
+
+/*Breakpoints*/
+/*small*/
+/*medium*/
+@media (min-width: 480px) {
+  .mainContent__h1 {
+    font-family: "Gentium book basic", serif;
+    font-size: 32px;
+    line-height: 1.25; }
+  .mainContent__h1, .mainContent__h2, .mainContent__h3 .mainContent__h4 {
+    font-family: "Roboto", sans-serif; }
+  .mainContent h2 {
+    font-size: 26px;
+    line-height: 1.15; }
+  .mainContent h3 {
+    font-size: 22px;
+    line-height: 1.136; }
+  .mainContent h4 {
+    font-size: 18px;
+    line-height: 1.11; }
+  .mainContent p {
+    font-family: "Gentium book basic", serif;
+    font-size: inherit;
+    line-height: 1.25; }
+  .menukort__header {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-size: 16px; } }
+
+/*mediumlg*/
+@media (min-width: 960px) {
+  .header__logo {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  .header__menuicon {
+    display: none; }
+  .header {
+    display: none; }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 32.20339%;
+    background-color: #393546; }
+  .sidebar__navigation {
+    display: block; }
+  .mainContent {
+    margin-left: 42.37288%;
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%; }
+  .mainContent__h1 {
+    font-size: 40px;
+    line-height: 1.05; }
+  .mainContent__h2 {
+    font-size: 34px;
+    line-height: 1.25; }
+  .mainContent__h3 {
+    font-size: 28px;
+    line-height: 1.25; }
+  .mainContent__h4 {
+    font-size: 18px;
+    line-height: 1.22; }
+  .mainContent__h5 {
+    line-height: 1.375; }
+  .navigation {
+    margin-right: 15px;
+    margin-top: 100px; }
+  .navigation__logo {
+    width: 225px; }
+  .navigation__logoContainer {
+    display: block;
+    float: right;
+    width: 100%; }
+  .navigation__items {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    display: block;
+    float: right;
+    width: 100%;
+    list-style-type: none;
+    text-align: right;
+    color: #FAFAFA;
+    border-right: 2px solid #d8131a; }
+  .navigation__item {
+    font-size: 20px;
+    line-height: 1.45;
+    margin: 0 20px 0 0;
+    text-transform: uppercase; }
+  .article__bleedPicture {
+    display: block;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    background-image: url("/assets/images/smagpaathailand.jpg");
+    background-size: 100% auto;
+    background-position: top left; }
+  hr {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 1em; }
+  .menukort__header {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-size: 22px; } }
+
+/*large*/
+@media (min-width: 1301px) {
+  .header__logo {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  .header__menuicon {
+    display: none; }
+  .header {
+    display: none; }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 32.20339%;
+    background-color: #393546; }
+  .sidebar__navigation {
+    display: block; }
+  .mainContent {
+    margin-left: 42.37288%;
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-top: 30px; }
+  .mainContent__h1 {
+    font-size: 48px;
+    line-height: 1.05; }
+  .mainContent__h2 {
+    font-size: 36px;
+    line-height: 1.25; }
+  .mainContent__h3 {
+    font-size: 28px;
+    line-height: 1.25; }
+  .mainContent__h4 {
+    font-size: 18px;
+    line-height: 1.22; }
+  .mainContent__h5 {
+    font-size: 24px;
+    line-height: 1.375; }
+  .navigation {
+    margin-right: 50px;
+    margin-top: 100px; }
+  .navigation__logoContainer {
+    display: block;
+    float: right;
+    width: 100%; }
+  .navigation__logo {
+    width: 315px; }
+  .navigation__items {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    display: block;
+    float: right;
+    width: 100%;
+    list-style-type: none;
+    text-align: right;
+    color: #FAFAFA;
+    border-right: 2px solid #d8131a; }
+  .navigation__item {
+    font-size: 26px;
+    line-height: 1.45;
+    margin: 0 20px 0 0;
+    text-transform: uppercase; }
+  .article__bleedPicture {
+    display: block;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    background-image: url("/assets/images/smagpaathailand.jpg");
+    background-size: 100% auto;
+    background-position: top left; }
+  hr {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 1em; }
+  .menukort__header {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-size: 22px; } }

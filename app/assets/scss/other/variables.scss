@@ -1,0 +1,102 @@
+$fontBody: 'Roboto', sans-serif;
+$fontHeading: 'Gentium book basic', serif;
+
+$backgroundcolor: #EBEBE8;
+$redkeycolor: #d8131a;
+$bluekeycolor: #EF2809;
+$white: #FAFAFA;
+$gray: #616161;
+$darkgray: #393546;
+
+$fontSettings: (
+  body: (
+    font-size: (
+      small: 16px,
+      medium: 18px,
+      large: 18px,
+      xlarge: 22px
+      ),
+    line-height: (
+      small: 1.3,
+      medium: 1.1414,
+      large:  1.5,
+      xlarge: 1.618
+      )
+    ),
+    heading1: (
+      font-size: (
+        small: 32px,
+        medium:  34px,
+        large:  38px,
+        xlarge:  40px
+        ),
+      line-height: (
+        small: 1.3,
+        medium: 1.1414,
+        large:  1.4,
+        xlarge: 1.4
+        )
+      ),
+      heading2: (
+        font-size: (
+          small: 26px,
+          medium:  28px,
+          large:   32px,
+          xlarge:  36px
+          ),
+        line-height: (
+          small: 1.15,
+          medium: 1.25,
+          large:  1.25,
+          xlarge: 1.25
+          )
+        ),
+        heading3: (
+          font-size: (
+            small: 22px,
+            medium:   24px,
+            large:    28px,
+            xlarge:  28px
+            ),
+          line-height: (
+            small: 1.136,
+            medium: 1.25,
+            large:  1.25,
+            xlarge: 1.25
+            )
+          ),
+          heading4: (
+            font-size: (
+              small: 18px,
+              medium:   18px,
+              large:    18px,
+              xlarge:  18px
+              ),
+            line-height: (
+              small: 1.11,
+              medium: 1.22,
+              large:  1.22,
+              xlarge: 1.22
+              )
+            ),
+            menucardHeader: (
+            font-size: (
+              small: 16px,
+              large: 18px
+              ),
+            line-height: (
+              small: 1.11,
+              large:  1.22
+              )
+            ),
+            menucardParagraph: (
+            font-size: (
+              small: 14px,
+              large: 16px
+              ),
+            line-height: (
+              small: 1.11,
+              large: 1.22
+              )
+            )
+  );

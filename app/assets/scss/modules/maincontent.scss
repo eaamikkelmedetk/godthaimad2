@@ -1,0 +1,156 @@
+.article__bleedPicture {
+  display: block;
+  background-image: url('~/assets/images/smagpaathailand.jpg');
+  background-size: 100% auto;
+  background-position: top left;
+}
+
+
+@mixin hrBleed() {
+  hr {
+    @include bleed-x(1em 1em);
+  }
+}
+
+@mixin mainContentSmallFont() {
+  .mainContent__h1
+  {
+      font-family: $fontHeading;
+      font-size: map-deep-get($fontSettings, heading1, font-size, small);
+      line-height: map-deep-get($fontSettings, heading1, line-height, small);
+  }
+
+  .mainContent__h2
+  {
+      font-size: map-deep-get($fontSettings, heading2, font-size, small);
+      line-height: map-deep-get($fontSettings, heading2, line-height, small);
+  }
+
+  .mainContent__h3
+  {
+    font-size: map-deep-get($fontSettings, heading3, font-size, small);
+    line-height: map-deep-get($fontSettings, heading3, line-height, small);
+  }
+
+  .mainContent__h4
+  {
+    font-size: map-deep-get($fontSettings, heading4, font-size, small);
+    line-height: map-deep-get($fontSettings, heading4, line-height, small);
+  }
+
+  .mainContent__paragraph
+  {
+      font-family: $fontHeading;
+      font-size: map-deep-get($fontSettings, body, font-size, small);
+      line-height: map-deep-get($fontSettings, body, line-height, small);
+  }
+}
+
+@mixin mainContentmediumFonts()
+{
+    .mainContent__h1
+    {
+      font-size: map-deep-get($fontSettings, heading1, font-size, medium);
+      line-height: map-deep-get($fontSettings, heading1, line-height, medium);
+    }
+
+    .mainContent__h2
+    {
+      font-size: map-deep-get($fontSettings, heading2, font-size, medium);
+      line-height: map-deep-get($fontSettings, heading2, line-height, medium);
+    }
+
+    .mainContent__h3
+    {
+      font-size: map-deep-get($fontSettings, heading3, font-size, medium);
+      line-height: map-deep-get($fontSettings, heading3, line-height, medium);
+    }
+
+    .mainContent__h4
+    {
+      font-size: map-deep-get($fontSettings, heading4, font-size, medium);
+      line-height: map-deep-get($fontSettings, heading4, line-height, medium);
+    }
+
+    .mainContent__paragraph
+    {
+      font-size: map-deep-get($fontSettings, body, font-size, medium);
+      line-height: map-deep-get($fontSettings, body, line-height, medium);
+    }
+}
+
+@mixin bleedArticlePicture() {
+  .article__bleedPicture {
+    display: block;
+    @include bleed-x(1em 1em);
+    background-image: url('~/assets/images/smagpaathailand.jpg');
+    background-size: 100% auto;
+    background-position: top left;
+  }
+}
+
+@mixin mainContentMediumLargeFonts()
+{
+    .mainContent__h1
+    {
+      font-size: map-deep-get($fontSettings, heading1, font-size, large);
+      line-height: map-deep-get($fontSettings, heading1, line-height, large);
+    }
+
+    .mainContent__h2
+    {
+      font-size: map-deep-get($fontSettings, heading2, font-size, large);
+      line-height: map-deep-get($fontSettings, heading2, line-height, large);
+    }
+
+    .mainContent__h3
+    {
+      font-size: map-deep-get($fontSettings, heading3, font-size, large);
+      line-height: map-deep-get($fontSettings, heading3, line-height, large);
+    }
+
+    .mainContent__h4
+    {
+      font-size: map-deep-get($fontSettings, heading4, font-size, large);
+      line-height: map-deep-get($fontSettings, heading4, line-height, large);
+    }
+
+    .mainContent__paragraph {
+      font-size: map-deep-get($fontSettings, body, font-size, large);
+      line-height: map-deep-get($fontSettings, body, line-height, large);
+    }
+}
+
+@mixin mainContentLargeFonts()
+{
+
+    .mainContent__h1
+    {
+      font-size: map-deep-get($fontSettings, heading1, font-size, xlarge);
+      line-height: map-deep-get($fontSettings, heading1, line-height, xlarge);
+    }
+
+    .mainContent__h2
+    {
+      font-size: map-deep-get($fontSettings, heading2, font-size, xlarge);
+      line-height: map-deep-get($fontSettings, heading2, line-height, xlarge);
+    }
+
+    .mainContent__h3
+    {
+      font-size: map-deep-get($fontSettings, heading3, font-size, xlarge);
+      line-height: map-deep-get($fontSettings, heading3, line-height, xlarge);
+    }
+
+    .mainContent__h4
+    {
+      font-size: map-deep-get($fontSettings, heading4, font-size, xlarge);
+      line-height: map-deep-get($fontSettings, heading4, line-height, xlarge);
+    }
+
+    .mainContent__paragraph
+    {
+      font-size: map-deep-get($fontSettings, body, font-size, xlarge);
+      line-height: map-deep-get($fontSettings, body, line-height, xlarge);
+    }
+}

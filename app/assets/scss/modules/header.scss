@@ -1,0 +1,46 @@
+/*Columns*/
+.header__logo
+{
+    @include span(nested 8);
+}
+
+.header__menuicon
+{
+    @include span(nested 4 last);
+}
+
+/*Typography and more*/
+.logo__img
+{
+    width: 283px;
+}
+
+.menu
+{
+    font-size: 1.25em;
+
+    text-align: right;
+}
+
+.menu__menuicon
+{
+    margin: 1.2rem 0rem 0 0;
+    padding: .4rem;
+
+    color: #fafafa;
+    border-radius: 20%;
+    background-color: $gray;
+}
+
+@mixin hideMenuIcon()
+{
+    .header__logo
+    {
+        @include span(nested 12);
+    }
+
+    .header__menuicon
+    {
+        display: none;
+    }
+}
